@@ -1,0 +1,96 @@
+fruits={"Apple":100,"banana":60,"pineapple":40}
+print(fruits["Apple"])
+fruits["pineapple"]={"small pa":25,"large pa":20}
+fruits.update({"Apple":{"small Ap":40,"big one":60}})
+fruits.update({"sithapal":100})
+fruits["papaya"]=50
+newfruits={"guava":70,"pears":50}
+fruits.update(newfruits)
+print(fruits)
+ravi=fruits["banana"]
+print(ravi)
+
+fruits_market={"Apple":100,"banana":60,"pineapple":40}
+fruits_market.update({"Apple":{"small Ap":40,"big one":60}})
+apple=fruits_market["Apple"]
+banana=fruits_market["banana"]
+pineapple=fruits_market["pineapple"]
+
+
+class FruitsObj:
+    def __init__(self,apple,banana,pineapple):
+        self.apple=apple
+        self.banana=banana
+        self.pineapple=pineapple
+
+
+fruitdot=FruitsObj(apple,banana,pineapple)     
+print(fruitdot.apple["small Ap"])  
+
+fruits.pop("Apple")
+opop=fruits.pop("banana")
+print(opop)
+fruits.popitem()
+fruits.popitem()
+print(fruits)
+nam="rohini"
+print(nam[0])
+
+
+dictt={}
+
+for i in range(len(nam)):
+    count=0
+    for j in range(len(nam)):
+        if nam[i]==nam[j]:
+            count+=1
+            dictt.update({nam[i]:count}) 
+            print(dictt)
+            
+        else:           
+            dictt.update({nam[i]:count})  
+            print(dictt)  
+
+print(dictt)  
+# second method for nam
+
+for r in nam:
+    if r not in dictt:
+        dictt[r]=1
+    else:
+        dictt[r] += 1   
+print(dictt)  
+         
+rhoio={"r":1,"o":3,"h":4}
+            
+f=open("textfile.txt","w")
+print(f)            
+print(f.closed)
+f.write("hello cheerry, how are you doing?")
+print(f.closed)
+f.close()
+print(f.closed)
+with open("textfile.txt","w") as f:
+    f.write("my world is diff now")
+    
+
+print(f.closed)
+with open("textfile.txt")as f:
+    data1=f.read(7)
+    print(data1)
+    tell1=f.tell()
+    print(tell1)
+    data2=f.read(4)
+    print(data2)
+    tell1=f.tell()
+    print(tell1)
+    seek3=f.seek(13)
+    data4=f.read()
+    print(data4)
+    
+    # data3=f.readlines()
+    # print(data3)
+with open("textfile.txt","w") as f:
+    f.write("this is first line in file handiling")
+  
+    
