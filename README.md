@@ -1,0 +1,1 @@
+this is a repo consisting of two files one is patners file in which i have practiced few patrens using loops concept like triangle patren, pyramid patren and few more ,in another file i have practiced dictionaries a bit .
